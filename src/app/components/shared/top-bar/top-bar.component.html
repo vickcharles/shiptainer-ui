@@ -1,0 +1,20 @@
+<header class="sh-flex sh-justify-content-space-between sh-align-items-center sh-position-absolute">
+  <img routerLink="home" src="assets/img/logo.png" alt="logo" class="sh-margin-left-xlarge logo sh-cursor-pointer">
+  <div class="hide-on-mobile">
+      <ul class="sh-flex sh-color-primary">
+          <li routerLink="home" routerLinkActive="active">HOME</li>
+          <li routerLink="product-info" routerLinkActive="active">TYPE OF CONTAINERS</li>
+          <li routerLink="contact" routerLinkActive="active">CONTACT</li>
+        </ul>
+  </div>
+  <div class="hide-on-desktop">
+      <button mat-button [matMenuTriggerFor]="menu" class="menu-mobile">
+          <i class="fas fa-bars fa-lg sh-color-white"></i>
+      </button>
+     <mat-menu #menu="matMenu">
+       <button [routerLink]="['/home']" mat-menu-item>Home</button>
+       <button [routerLink]="['/product-info']" mat-menu-item>Type of containers</button>
+       <button [routerLink]="['/contact']" mat-menu-item>Contact</button>
+     </mat-menu>
+  </div>
+</header>

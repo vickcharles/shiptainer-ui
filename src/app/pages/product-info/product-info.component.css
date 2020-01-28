@@ -1,0 +1,139 @@
+.hero{
+    margin-top: 200px;
+  }
+
+  .hero p {
+    padding: 0 200px;
+  }
+
+  .section-text{
+    margin: 0 !important;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .title {
+    padding: 10% 10% 0 10%;
+  }
+
+  .none {
+    align-items: baseline !important;
+    text-align: left !important;
+  }
+
+  .text {
+    padding: 0 10% 30% 10%;
+  }
+
+  .padding {
+    padding: 30px !important;
+  }
+
+  .reefer-img {
+    background: url(/assets/img/reefer.png);
+    height: 320px;
+    background-size: cover;
+  }
+
+  .special-img {
+      background: url(/assets/img/special.png);
+      height: 320px;
+      background-size: cover;
+  }
+
+  .dry-img {
+      background: url(/assets/img/dry.png);
+      height: 320px;
+      background-size: cover;
+  }
+  .rightRs {
+      top: 70%;
+      position: absolute;
+      margin: auto;
+      border: none;
+      background: transparent;
+      bottom: 0;
+      width: 50px;
+      height: 50px;
+      right: 4.25%;
+      outline: 0!important;
+      cursor: pointer;
+  }
+  .leftRs2 {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      border: none;
+      background: transparent;
+      width: 50px;
+      height: 50px;
+      left: -0.75%;
+      outline: 0!important;
+      cursor: pointer;
+  }
+
+  .rightRs2 {
+      top: 0;
+      position: absolute;
+      margin: auto;
+      border: none;
+      background: transparent;
+      bottom: 0;
+      width: 50px;
+      height: 50px;
+      right: 0.75%;
+      outline: 0!important;
+      cursor: pointer;
+  }
+  .section-2{
+      background: #1B75BB;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .linea{
+      border: 1px solid lightgrey;
+      width: 25%;
+  }
+  .section-3 .carousel{
+      margin: 0px 50px;
+  }
+  .carousel .item p {
+      font-family: 'rajdhani-bold'!important;
+      color: grey;
+  }
+  .section-4{
+      background: #1B75BB;
+  }
+  .padding-text {
+   padding-left: 60px !important;
+   padding-right: 60px !important;
+  }
+  .row{
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+  }
+  .row div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+  .item img {
+      width: 100%;
+  }
+  @media screen and (max-width: 958px) {
+      .hide  {
+          display: none !important;
+      }
+    }
+  @media screen and (max-width: 576px) {
+    .hide  {
+        display: none !important;
+    }
+      .hero p {
+          padding: 0 20px;
+      }
+  }

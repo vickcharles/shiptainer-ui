@@ -1,0 +1,366 @@
+.hero{
+    background: url(/assets/img/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 90vh;
+    display: flex;
+    margin-top: 90px;
+    flex-direction: column;
+    justify-content: center;
+}
+.top-panel::before{
+    content: '╲╱';
+    color: #fff;
+    position: absolute;
+    opacity: 0.8;
+    width: 6rem;
+    font-size: 2rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    bottom: 2rem;
+    margin-left: -3rem;
+    left: 50%;
+    animation: bounce 1s ease infinite;
+  }
+
+  @keyframes bounce {
+    50% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .top-panel {
+    width: 100%;
+  }
+.imagenes-icon img{
+    width: 100px;
+    height: 100px;
+}
+.rectangulo{
+    background: #1b75bb;
+    width: 300px;
+    height: 500px;
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 7px 8px 16px -10px rgba(0,0,0,0.75);
+}
+.rectangulo2{
+    background: #1b75bb;
+    width: 300px;
+    height: 500px;
+    position: relative;
+    box-shadow: 7px 8px 16px -10px rgba(0,0,0,0.75);
+    float: left;
+    display: flex;
+    align-items: flex-end;
+}
+.rectangulo h3 {
+    padding: 6% 8%;
+    font-size: 40px;
+    line-height: 32px;
+}
+.rectangulo2 h3 {
+    padding: 6% 8%;
+    font-size: 40px;
+    line-height: 32px;
+}
+.texto-data, .texto-data2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.texto-data  {
+    padding: 0 10% 0 10% !important;
+}
+.texto-data2 p {
+    text-align: justify;
+}
+.texto-data2  {
+    padding: 0 10% 0 10%!important;
+}
+.texto-data2 p {
+    text-align: justify;
+}
+.rectangulo img {
+    width: 500px;
+    position: absolute;
+    left: calc(100% - 460px);
+    top: 0%;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
+}
+.rectangulo2 img {
+    width: 500px;
+    position: absolute;
+    right: calc(100% - 460px);
+    top: 0%;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
+}
+.text {
+  padding: 0 10% 30% 10%;
+}
+.title{
+    padding: 10% 10% 0 10%;
+}
+.text-principal h3 {
+    line-height: 7vw;
+    font-size: 100px;
+    color: white;
+    text-shadow: 0 4px 2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 0;
+}
+.text-principal h4 {
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1.3vw;
+    text-shadow: 0 4px 2px rgba(0, 0, 0, 0.4);
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.banner{
+  background-color: #1b75bb;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+.banner .row {
+    height: 100%;
+}
+.text-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: right;
+}
+.center h3 {
+    line-height: 45px; 
+}
+.ul-2 {
+    width: 60%;
+}
+.ul-2 li {
+    color: #1b75bb;
+    text-align: right;
+}
+.seccion-ul2 {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+}
+.section-2 p {
+    letter-spacing: 15px;
+}
+.section-4 {
+    padding: 0px 15%;
+}
+.images-section {
+    padding: 0px 15%;
+}
+.images-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.images-section div span {
+    font-family: 'rajdhani-bold'!important;
+    line-height: 20px;
+}
+.bannerStyle h1 {
+    background-color: #ccc;
+    min-height: 300px;
+    text-align: center;
+    line-height: 300px;
+}
+.leftRs {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    left: 4.25%;
+    outline: 0!important;
+    cursor: pointer;
+}
+.rightRs {
+    top: 70%;
+    position: absolute;
+    margin: auto;
+    border: none;
+    background: transparent;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    right: 4.25%;
+    outline: 0!important;
+    cursor: pointer;
+}
+.product-image{
+    max-height: 400px;
+}
+.carousel-2{
+    background: #3a74b6;
+    display: flex;
+    height: 500px;
+}
+.carousel-2 .window-1, .carousel-2 .window-3 {
+    height: 300px;
+    width: 100%;
+    transition: 500ms;
+}
+.carousel-2 .window-2 {
+    width: 100%;
+    position: relative;
+    bottom: 47px;
+    transition: 800ms;
+    height: 430px;
+    border: 15px solid #3a74b6;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+.carousel-2 .window-3 {
+    height: 300px;
+    width: 100%;  
+}
+.window-2 div {
+    border: 4px solid #fff;
+    width: 150px;
+    margin-bottom: 40px;
+    height: 60px;
+    z-index: 2;
+}
+.window-2 .capa{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(73, 116, 177, 0.45);
+    border: none!important;
+}
+.arrow-left{
+    left: -90px;
+}
+.arrow-right{
+    right: -90px;
+}
+.text-container{
+    width: 100vw;
+    position: absolute;
+    top: 98%;
+    font-family: 'rajdhani-bold'!important;
+}
+.section-text{
+    margin: 0!important;
+    background: rgba(0, 0, 0, 0.6);  
+}
+.title {
+    padding: 10% 10% 0 10%;
+}
+@media screen and (max-width: 580px) {
+    .image-transparente {
+       max-width: 300px !important;
+    }
+ }
+@media screen and (max-width: 576px) {
+    .rectangulo{
+        background: #1b75bb;
+        width: 100%;
+        height: 500px;
+        position: relative;
+        float: right;
+        display: flex;
+        align-items: flex-end;
+        box-shadow: 7px 8px 16px -10px rgba(0,0,0,0.75);
+    }
+
+    .rectangulo2 {
+        background: #1b75bb;
+        width: 100%;
+        height: 500px;
+        position: relative;
+        box-shadow: 7px 8px 16px -10px rgba(0,0,0,0.75);
+        float: left;
+        display: flex;
+        align-items: flex-end;
+    }
+    .texto-data  {
+        padding: 7% 10% 7% 10%!important;
+    }
+    .texto-data2  {
+        padding: 7% 10% 7% 10%!important;
+    }
+    .image-transparente {
+        display: none !important;
+    }
+    .rectangulo img, .rectangulo2 img {
+        width: 100% !important;
+        left: 0 !important;
+        top: 10% !important;
+    }
+
+    .hero {
+        background-position: 94%;
+        height: 70vh;
+    }
+    .section-3 h3 ,.section-2 h3 {
+        font-size: 3rem !important;
+    }
+    h4 {
+      font-size: 5vw !important;
+    }
+    .section-2 p {
+        font-size: 1rem !important;
+        letter-spacing: 5px;
+    }
+    .section-2 .images-section {
+        justify-content: center;
+    }
+    .card {
+        display: block!important;
+    }
+    .product-image {
+        position: relative;
+    }
+    .leftRs {
+        left: 0;
+    }
+    .text-principal {
+        text-align: center;
+        margin: 0 0 10% 0!important;
+    }
+    .text-container {
+        font-size: 25px !important;
+        top: 102%;
+    }
+    .text-principal h3 {
+        font-size: 14vw;
+        line-height: 14vw;
+        margin-top: 0;
+    }
+    .product-image {
+        width: 100%;
+        max-height: inherit;
+        margin-top: 40px;
+    }
+    .section-3 {
+      margin-bottom: 0px;
+    }
+    .carousel-2 .window-2 {
+        width: 1000%;
+    }
+    .section-text{
+        width: 70%!important;
+    }
+    .text{
+        font-size: 20px !important;
+}
+}

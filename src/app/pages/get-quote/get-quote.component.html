@@ -1,0 +1,67 @@
+<div class="pgae-title sh-text-align-center">
+  <h2 class="sh-font-size-xlarge sh-color-primary sh-margin-bottom-zero" data-aos="zoom-out-up">Get a quote</h2>
+  <p class="sh-color-secondary sh-font-size-small" >
+    Fill out the form below to get a quote in minutes!
+  </p>
+</div>
+<div class="row">
+  <div class="col-12 col-md-7 margin">
+    <div class="contact-section">
+        <form class="example-form row" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+          <div class="col-12 col-md-7 ">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Name" formControlName="name">
+            </mat-form-field>               
+          </div>
+          <div class="col-12 col-md-7">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Last Name" formControlName="lastName" >
+            </mat-form-field>               
+          </div>
+          <div class="col-12 col-md-7">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="CellPhone" formControlName="cellPhone" >
+            </mat-form-field>               
+          </div>
+          <div class="col-12 col-md-7">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Email" formControlName="email" >
+            </mat-form-field>               
+          </div>
+          <div class="col-12 col-md-7">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Name of the company" formControlName="nameOfCompany">
+            </mat-form-field>               
+          </div>
+          <div class="col-12 col-md-7">
+            <mat-form-field>
+              <mat-label>Type of container</mat-label>
+                <mat-select formControlName="typeOfContainer">
+                  <mat-option *ngFor="let container of containers" [value]="container.value">
+                    {{container.viewValue}}
+                  </mat-option>
+              </mat-select>
+            </mat-form-field>
+        </div>
+          <div class="col-12 col-md-7">
+              <mat-form-field>
+                <mat-label>Continent</mat-label>
+                  <mat-select formControlName="continent">
+                    <mat-option *ngFor="let food of foods" [value]="food.value">
+                      {{food.viewValue}}
+                    </mat-option>
+                </mat-select>
+              </mat-form-field>             
+          </div>
+          <div class="col-12 col-md-7">
+              <mat-form-field class="example-full-width">
+                  <textarea matInput placeholder="Message" formControlName="message"></textarea>
+                </mat-form-field>
+            </div>
+              <div class="col-12 col-md-12n sh-text-align-center">
+                <button *ngIf="!isLoading" class="sh-btn-primary" [disabled]="!formGroup.valid" type="submit">submit</button>
+                <mat-spinner class="sh-margin-center" *ngIf="isLoading"></mat-spinner>
+              </div>
+          </form>
+    </div>
+    </div>

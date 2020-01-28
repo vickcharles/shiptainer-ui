@@ -1,0 +1,47 @@
+
+<div class="contenedor">
+  <div class="row collo">
+    <div class="col col-md-6">
+    </div>
+    <div class="col col-12 col-md-6">
+        <h2 class="sh-font-size-xlarge sh-color-primary">¡Hello!</h2>
+        <p class="sh-color-secondary sh-font-size-small subtitle">
+          My Name is {{comercial.name}} {{comercial.lastName}} I'm your assigned executive,
+          I'm ready to handle your request.
+        </p>
+    </div>
+  </div>
+  <div class="line-thanks">
+    <div class="row">
+      <div class="col-6 col-md-6">
+        <img data-aos="fade-up" data-aos-offset="-100" src="../assets/img/{{comercial.name}}.png" alt="">
+      </div>
+      <div class="col-6 col-md-6 ">
+        <div class="contacto">
+          <div *ngIf="comercial.name == 'Alejandra'; else logedin">
+              <p class="sh-color-white sh-font-size-small">
+                  Phone Colombia: +57 (1) 580027
+                </p>
+                <p class="sh-color-white sh-font-size-small">
+                  Phone EE.UU: +1 (407) 2647110
+                </p>
+                <p class="sh-color-white sh-font-size-small">
+                  Cellphone: +57 (312) 432 3613
+                </p>
+                <p class="sh-color-white sh-font-size-small">
+                  www.shiptainer.co
+                </p>
+          </div>
+          <ng-template #logedin>
+              <p class="sh-color-white sh-font-size-small">
+                Phone EE.UU: +1 (407) 2647110
+              </p>
+              <p class="sh-color-white sh-font-size-small">
+                www.shiptainer.co
+              </p>
+           </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

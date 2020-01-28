@@ -1,0 +1,96 @@
+<div class="hero sh-text-align-center">
+  <h2 class="sh-font-size-xlarge sh-color-primary sh-margin-bottom-zero" data-aos="zoom-out-up">Types of Containers</h2>
+  <p class="sh-color-secondary sh-font-size-small" >Every day our buyers make promises of their own to their customers.
+    At Shiptainer Container Sales, we offer containers Dry and Reefer
+    that allow our buyers to extract tangible benefits:
+  </p>
+</div>
+<div class="row sh-margin-top-xlarge">
+ <div class="col-12 col-md-8 reefer-img">
+ </div>
+ <div class="col-12 col-md-4">
+   <div class="none padding">
+      <h2 class="sh-font-size-xlarge sh-color-primary sh-margin-bottom-zero">Reefer</h2>
+      <p class="sh-color-secondary sh-font-size-small" >
+        Specially used for storage and transport of refrigerated and frozen products at any temperature level.
+      </p>
+      <button class="sh-btn-default" [routerLink]="['/get-a-quote']">GET A QUOTE</button>
+   </div>
+ </div>
+</div>
+<div class="row hide">
+  <div class="col-12 col-md-4">
+    <div class="none padding">
+       <h2 class="sh-font-size-xlarge sh-color-primary sh-margin-bottom-zero">Dry</h2>
+       <p class="sh-color-secondary sh-font-size-small">
+          Container utilized for transporting cargo overseas it is constructed in standardized sizes and designed to accommodate general cargo.
+        </p>
+        <button class="sh-btn-default" [routerLink]="['/get-a-quote']">GET A QUOTE</button>
+    </div>
+  </div>
+  <div class="col-12 col-md-8 dry-img">
+  </div>
+</div>
+<div class="row hide-on-desktop">
+    <div class="col-12 col-md-8 dry-img">
+    </div>
+    <div class="col-12 col-md-4">
+        <div class="none padding">
+           <h2 class="sh-font-size-xlarge sh-color-primary sh-margin-bottom-zero">Dry</h2>
+           <p class="sh-color-secondary sh-font-size-small">
+              Container utilized for transporting cargo overseas it is constructed in standardized sizes and designed to accommodate general cargo.
+            </p>
+            <button class="sh-btn-default" [routerLink]="['/get-a-quote']">GET A QUOTE</button>  
+        </div>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-md-8 special-img">
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="none padding">
+         <h2 class="sh-font-size-xlarge sh-color-primary sh-margin-bottom-zero">Special</h2>
+         <p class="sh-color-secondary sh-font-size-small">
+            Extraordinary cargo calls for extraordinary measures. Some types of cargo simply do not fit into the standard box why we - literally - need to think outside the box to find the right solutions.
+          </p>
+          <button class="sh-btn-default" [routerLink]="['/get-a-quote']">GET A QUOTE</button>
+      </div>
+    </div>
+  </div>
+<!-- SECCION product info-->
+<div class="section-3 sh-padding-top-xlarge">
+  <h3 class="sh-color-primary sh-text-align-center sh-font-size-xlarge sh-margin-top-xlarge sh-margin-bottom-zero">Shiptainer Sizes</h3>  
+  <ngu-carousel #myCarousel [inputs]="carouselConfig2" [dataSource]="products2" class="carousel" data-aos="fade-up" data-aos-offset="300">
+      <div *nguCarouselDef="let item;" class="item sh-text-align-center" >
+        <img [src]="item.img" alt="">
+        <p class=" ">{{item.text}}</p>
+      </div>
+    <button NguCarouselPrev class='leftRs2'><img src="../assets/img/left-arrow.png" alt=""></button>
+    <button NguCarouselNext class='rightRs2'><img src="../assets/img/right-arrow.png" alt=""></button>
+  </ngu-carousel>
+</div> 
+
+<div class="section-4" data-aos="fade-up" data-aos-offset="600">
+    <h3 class="sh-color-white sh-text-align-center sh-font-size-xlarge sh-padding-top-xlarge sh-margin-bottom-zero">Container Conditions</h3>  
+    <p class="sh-color-white padding-text  sh-text-align-center sh-letter-spacing-small">The description of the container conditions helps you to select the container you need for
+      your project. Whether it's a Reuse that is more or less ready to go or a Repurpose or Recycle,
+      that you are perhaps completely changing into something else. 
+    </p>
+    <div class="row sh-padding-bottom-xlarge sh-padding-top-large" >
+      <div class="image-1 col-12 col-md-4"> 
+        <h4 class="sh-color-white sh-font-size-medium sh-margin-bottom-zero sh-margin-top-zero ">Reuse</h4>
+        <img src="../assets/img/reuse-01.png" alt="">
+        <p class="sh-color-white">The unit is structurally intact<br> and may be subject to minor <br> wear and tear. The unit may <br> require smaller repair to the<br> structure or machinery to <br> become cargo worthy.</p>
+      </div>
+      <div class="image-2 col-12 col-md-4"> 
+        <h4 class="sh-color-white sh-font-size-medium sh-margin-bottom-zero sh-margin-top-zero ">Recycle</h4>
+        <img src="../assets/img/recycle-02.png" alt="">
+        <p class="sh-color-white">The unit has heavy damages <br> and will require significant<br> repair to be reused. The unit<br> may not be loaded to a<br> chassis and may not be<br> stackable.</p>
+      </div>
+      <div class="image-3 col-12 col-md-4"> 
+        <h4 class="sh-color-white sh-font-size-medium sh-margin-bottom-zero sh-margin-top-zero ">Repurpose</h4>
+        <img src="../assets/img/repurpose-03.png" alt="">
+        <p class="sh-color-white">The unit is loadable on a <br> chassis, but may need<br> significant chassis, but may<br> need significant to become<br> cargo worthy.</p>
+      </div>
+    </div>
